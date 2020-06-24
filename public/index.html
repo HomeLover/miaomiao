@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <!-- user-scalable=no 不允许用户进行缩放处理 -->
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- <%= BASE_URL %> 模板写法 上线的时候 用于修改 -->
+    <link rel="stylesheet" href="<%= BASE_URL %>css/common.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/iconfont/iconfont.css">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
